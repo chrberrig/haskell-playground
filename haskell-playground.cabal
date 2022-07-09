@@ -30,3 +30,11 @@ executable haskell-playground
     build-depends:    base ^>=4.11.1.0
     hs-source-dirs:   app
     default-language: Haskell2010
+
+Test-suite tests
+    type: exitcode-stdio-1.0
+    ghc-options: -Wall
+    hs-source-dirs: test
+    main-is:    Tests.hs
+    build-depends: base, HUnit
+    default-language: Haskell2010
